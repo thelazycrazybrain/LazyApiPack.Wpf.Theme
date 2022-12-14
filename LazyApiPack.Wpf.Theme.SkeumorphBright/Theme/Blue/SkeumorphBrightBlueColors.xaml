@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="PrimaryForegroundColor">Blue</Color>
+    <SolidColorBrush x:Key="PrimaryForegroundColorBrush" Color="{DynamicResource PrimaryForegroundColor}"/>
+
+    <Color x:Key="PrimaryBackgroundColor">LightBlue</Color>
+    <SolidColorBrush x:Key="PrimaryBackgroundColorBrush" Color="{DynamicResource PrimaryBackgroundColor}"/>
+</ResourceDictionary>

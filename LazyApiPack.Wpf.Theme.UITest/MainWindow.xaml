@@ -1,0 +1,16 @@
+﻿<Window x:Class="LazyApiPack.Wpf.Theme.UITest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LazyApiPack.Wpf.Theme.UITest"
+        xmlns:themes="clr-namespace:LazyApiPack.Wpf.Theme;assembly=LazyApiPack.Wpf.Theme"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <local:SpecialControl HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="170" Width="327"/>
+        <ComboBox SelectedItem="{Binding CurrentTheme, Source={x:Static themes:ThemeManager.Instance}}" ItemsSource="{Binding AvailableThemes, Source={x:Static themes:ThemeManager.Instance}}"  HorizontalAlignment="Left" Margin="518,10,0,0" VerticalAlignment="Top" Width="272"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="518,50,0,0" VerticalAlignment="Top" Height="45" Width="170"/>
+
+    </Grid>
+</Window>

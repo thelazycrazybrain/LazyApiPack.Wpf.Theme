@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:LazyApiPack.Wpf.Theme.UITest">
+
+    <ControlTemplate x:Key="SpecialControlTemplate" TargetType="{x:Type local:SpecialControl}" >
+        <Border BorderBrush="{DynamicResource PrimaryForegroundColorBrush}" Background="{DynamicResource PrimaryBackgroundColorBrush}" BorderThickness="5">
+            <Grid>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{TemplateBinding Title}"/>
+            </Grid>
+        </Border>
+    </ControlTemplate>
+
+    <Style TargetType="{x:Type local:SpecialControl}">
+        <Setter Property="Template" Value="{StaticResource SpecialControlTemplate}"/>
+    </Style>
+
+</ResourceDictionary>

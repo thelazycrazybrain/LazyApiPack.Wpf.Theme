@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LazyApiPack.Wpf.Theme.SkeumorphBright\LazyApiPack.Wpf.Theme.SkeumorphBright.csproj" />
+    <ProjectReference Include="..\LazyApiPack.Wpf.Theme.SkeumorphDark\LazyApiPack.Wpf.Theme.SkeumorphDark.csproj" />
+    <ProjectReference Include="..\LazyApiPack.Wpf.Theme\LazyApiPack.Wpf.Theme.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\CustomSkeumorphTheme.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
