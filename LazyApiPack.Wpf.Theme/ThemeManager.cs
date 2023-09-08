@@ -18,10 +18,8 @@ namespace LazyApiPack.Wpf.Theme
     public class ThemeService : NotifyObject, IThemeService, IDisposable
     {
         [DisallowNull] private Application _app;
-
-
         /// <summary>
-        /// Creates an instance of the ThemeManager. Use Start() to create an instance.
+        /// Creates an instance of the Theme Service
         /// </summary>
         /// <param name="app">The current application.</param>
         /// <param name="themes">A list of available themes.</param>
