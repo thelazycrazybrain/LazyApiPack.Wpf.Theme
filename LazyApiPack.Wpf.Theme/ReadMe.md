@@ -10,21 +10,21 @@ First, you need to initialize the ThemeManager.
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            // Start the theme manager and add supported themes to it
-            ThemeManager.Start(this,
-               SkeumorphDarkTheme.CreateSkeumorphNightTheme(null, null, null,
-                   new[] { "SkeuTest1", "SkeuTest2" },
-                   new Uri("pack://application:,,,/LazyApiPack.Wpf.Theme.UITest;component/Themes/CustomSkeumorphTheme.xaml", UriKind.Absolute)),
-               SkeumorphBrightTheme.CreateSkeumorphBrightBlueTheme(null, null, null,
-                   new[] { "SkeuTest3", "SkeuTest4" },
-                   new Uri("pack://application:,,,/LazyApiPack.Wpf.Theme.UITest;component/Themes/CustomSkeumorphTheme.xaml", UriKind.Absolute))
-               // ...
-               );
-            // Then set the first theme
-            ThemeManager.Instance.SetTheme("Skeumorph Dark Night");
+            /// Initialize the theme Skeumorph Dark Theme
+            var a = SkeumorphDarkTheme.CreateSkeumorphNightTheme(null, null, null,
+                new[] { "SkeuTest1", "SkeuTest2" },
+                new Uri("pack://application:,,,/LazyApiPack.Wpf.Theme.UITest;component/Themes/CustomSkeumorphTheme.xaml", UriKind.Absolute));
 
-            // if you store the theme in a variable or select it via ThemeManager.Instance.AvailableThemes
-            // you can simply set the theme with ThemeManager.Instance.CurrentTheme = myTheme;
+            /// Initialize the theme Skeumorop Bright Theme
+            var b = SkeumorphBrightTheme.CreateSkeumorphBrightBlueTheme(null, null, null,
+                  new[] { "SkeuTest3", "SkeuTest4" },
+                  new Uri("pack://application:,,,/LazyApiPack.Wpf.Theme.UITest;component/Themes/CustomSkeumorphTheme.xaml", UriKind.Absolute));
+            /// Initialize the theme Skeumorph Bright THEME
+            var c = SkeumorphBrightTheme.CreateSkeumorphBrightGreenTheme(null, null, null,
+                      new[] { "SkeuTest5", "SkeuTest6" },
+                      new Uri("pack://application:,,,/LazyApiPack.Wpf.Theme.UITest;component/Themes/CustomSkeumorphTheme.xaml", UriKind.Absolute));
+            /// Set theme a as the current theme.
+            ThemeService.CurrentTheme = a;
         }
     }
 ```
@@ -32,20 +32,18 @@ First, you need to initialize the ThemeManager.
 # How to switch a theme
 You can set the theme in code with 
 ```csharp
-ThemeManager.Instance.SetTheme("ThemeName");
-```
-or
-```csharp
-ThemeManager.Instance.CurrentTheme = myTheme;
+ThemeService.CurrentTheme = themeObject;
 ```
 
 or you can bind the Theme Manager in the UI
 
 ```xaml
 <ComboBox 
-    SelectedItem="{Binding CurrentTheme, Source={x:Static themes:ThemeManager.Instance}}" 
-    ItemsSource="{Binding AvailableThemes, Source={x:Static themes:ThemeManager.Instance}}" />
+    SelectedItem="{Binding CurrentTheme, Source={x:Static local:App.ThemeService}}" 
+    ItemsSource="{Binding AvailableThemes, Source={x:Static local:App.ThemeService}}" />
 ```
+
+It might be easier to use the theme manager in an MVVM application and instantiate the theme service as a singleton service.
 
 # How to add predefined themes
 To add predefined themes, simply install a packed from the LazyApiPack.Wpf.Theme.* namespace and use the Theme-Classes

@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyApiPack.Wpf.Theme", "LazyApiPack.Wpf.Theme\LazyApiPack.Wpf.Theme.csproj", "{D0FB65E0-4967-493D-93D1-EC7FA12E821A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyApiPack.Wpf.Theme", "LazyApiPack.Wpf.Theme\LazyApiPack.Wpf.Theme.csproj", "{D0FB65E0-4967-493D-93D1-EC7FA12E821A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7869E816-F094-4E6D-9E44-F39C31070919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyApiPack.Wpf.Theme.UITest", "LazyApiPack.Wpf.Theme.UITest\LazyApiPack.Wpf.Theme.UITest.csproj", "{C0B0BAA1-1DC9-4E66-B136-69A396D2E993}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyApiPack.Wpf.Theme.UITest", "LazyApiPack.Wpf.Theme.UITest\LazyApiPack.Wpf.Theme.UITest.csproj", "{C0B0BAA1-1DC9-4E66-B136-69A396D2E993}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themes", "Themes", "{5375761B-7F87-4D54-BCDF-F2A248D0C2D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyApiPack.Wpf.Theme.SkeumorphDark", "LazyApiPack.Wpf.Theme.SkeumorphDark\LazyApiPack.Wpf.Theme.SkeumorphDark.csproj", "{D88D55D6-4021-460C-8D0E-AA721544182A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyApiPack.Wpf.Theme.SkeumorphDark", "LazyApiPack.Wpf.Theme.SkeumorphDark\LazyApiPack.Wpf.Theme.SkeumorphDark.csproj", "{D88D55D6-4021-460C-8D0E-AA721544182A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyApiPack.Wpf.Theme.SkeumorphBright", "LazyApiPack.Wpf.Theme.SkeumorphBright\LazyApiPack.Wpf.Theme.SkeumorphBright.csproj", "{74A3014E-C394-4978-B2D4-58373E814F70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyApiPack.Wpf.Theme.SkeumorphBright", "LazyApiPack.Wpf.Theme.SkeumorphBright\LazyApiPack.Wpf.Theme.SkeumorphBright.csproj", "{74A3014E-C394-4978-B2D4-58373E814F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyApiPack.Theme", "LazyApiPack.Theme\LazyApiPack.Theme.csproj", "{00B87CB8-AFED-44C5-8999-C8A6E13F08C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{74A3014E-C394-4978-B2D4-58373E814F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74A3014E-C394-4978-B2D4-58373E814F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74A3014E-C394-4978-B2D4-58373E814F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B87CB8-AFED-44C5-8999-C8A6E13F08C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B87CB8-AFED-44C5-8999-C8A6E13F08C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B87CB8-AFED-44C5-8999-C8A6E13F08C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B87CB8-AFED-44C5-8999-C8A6E13F08C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
