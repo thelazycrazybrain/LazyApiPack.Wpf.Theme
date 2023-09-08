@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LazyApiPack.XamlPreview": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Lazy\\Desktop\\filled – Kopi.xaml\""
+    }
+  }
+}

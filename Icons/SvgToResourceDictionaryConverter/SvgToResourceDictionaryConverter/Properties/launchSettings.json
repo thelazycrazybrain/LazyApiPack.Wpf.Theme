@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SvgToResourceDictionaryConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Lazy\\Desktop\\Icons\\Weather Icons\\src\""
+    }
+  }
+}
