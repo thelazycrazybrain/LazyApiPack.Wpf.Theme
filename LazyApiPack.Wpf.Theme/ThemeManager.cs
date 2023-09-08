@@ -18,7 +18,7 @@ namespace LazyApiPack.Wpf.Theme
     public class ThemeService : NotifyObject, IThemeService, IDisposable
     {
         [DisallowNull] private Application _app;
-        public event PropertyChangedEventHandler? PropertyChanged;
+
 
         /// <summary>
         /// Creates an instance of the ThemeManager. Use Start() to create an instance.
